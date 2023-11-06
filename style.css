@@ -1,0 +1,135 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.3s; /* Adiciona uma transição suave de tamanho */
+}
+
+
+/* Aplicando a animação "jump" ao passar o mouse sobre os links do menu */
+nav ul li a:hover {
+    color: #95d7d9; /* Altera a cor ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    font-size: 18px;
+}
+
+/* Estilizando o cabeçalho com um fundo de gradiente em cascata de cima para baixo */
+/* Estilizando o cabeçalho com um fundo de gradiente em cascata de cima para baixo */
+header {
+    padding: 82px 0px 19px;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #618ad3, #95d7d9, #fd7759, #f58488, #f7b635, #618ad3);
+    background-size: 100% 200%; /* Aumenta o tamanho vertical do gradiente para criar o efeito de cascata */
+    animation: cascade-background 5s linear infinite;
+}
+
+/* Definindo a animação para o fundo em cascata */
+@keyframes cascade-background {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 -100%;
+    }
+}
+
+/* Estilizando a logo */
+.logo {
+    max-width: 100%; /* Define uma largura máxima de 100% */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+}
+
+
+/* Estilizando o título do projeto no cabeçalho */
+header h1 {
+    font-family: 'SuaFonte', sans-serif;
+    font-size: 36px;
+    color: #f9fbf1;
+}
+
+/* Estilizando o menu de navegação no cabeçalho */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    animation: cascade-slide-in 1.5s ease forwards;
+}
+
+/* Estilizando os itens do menu */
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fbf1f5;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+/* Definindo a animação de cascata para o menu de navegação no cabeçalho */
+@keyframes cascade-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav a {
+    color: #e01473;
+    text-decoration: none;
+    
+}
+
+/* Estilo para o menu fixo */
+.menu {
+    position: fixed; /* Torna o menu fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #140b2e;
+    color: #f9fbf1; /* Cor do texto do menu */
+}
+
+/* Estilize os itens do menu */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #f9fbf1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* Estilo das seções */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    color: #fd7759;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #140b2e;
+    color: #f9fbf1;
+    text-align: center;
+    padding: 20px;
+}
