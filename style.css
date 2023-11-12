@@ -20,13 +20,14 @@ nav ul li a:hover {
 /* Estilizando o cabeçalho com um fundo de gradiente em cascata de cima para baixo */
 /* Estilizando o cabeçalho com um fundo de gradiente em cascata de cima para baixo */
 header {
-    padding: 82px 0px 19px;
+    padding: 40px 20px 20px; /* Acrescente espaço acima do título */
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(to bottom, #618ad3, #95d7d9, #fd7759, #f58488, #f7b635, #618ad3);
+    background: linear-gradient(to bottom, #ffd11a, #eebd48, #a0ca60, #d7a6ee, #fb9124, #14ade1, #4c9e4c,  #fab6d6,  #ffd11a);
     background-size: 100% 200%; /* Aumenta o tamanho vertical do gradiente para criar o efeito de cascata */
     animation: cascade-background 5s linear infinite;
 }
+
 
 /* Definindo a animação para o fundo em cascata */
 @keyframes cascade-background {
@@ -49,8 +50,9 @@ header {
 header h1 {
     font-family: 'SuaFonte', sans-serif;
     font-size: 36px;
-    color: #f9fbf1;
+    color: #4b1c08; /* Marrom */
 }
+
 
 /* Estilizando o menu de navegação no cabeçalho */
 nav ul {
@@ -64,10 +66,9 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #fbf1f5;
+    color: #fb9124; /* Laranja */
     font-weight: bold;
     font-size: 16px;
-    
 }
 
 /* Definindo a animação de cascata para o menu de navegação no cabeçalho */
@@ -94,14 +95,16 @@ nav a {
     top: 0;
     left: 0;
     width: 100%;
-    background: #140b2e;
-    color: #f9fbf1; /* Cor do texto do menu */
+    background: #4b1c08; /* Marrom */
+    color: #fab6d6; /* Rosa */
+    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
 }
 
 /* Estilize os itens do menu */
 .menu ul {
     list-style-type: none;
     padding: 0;
+    margin: 15px 0 10; /* Adiciona um espaço no topo para acomodar o menu */
 }
 
 .menu ul li {
@@ -111,10 +114,19 @@ nav a {
 
 .menu ul li a {
     text-decoration: none;
-    color: #f9fbf1;
+    color: #ffd11a; /* Amarelo */
     font-weight: bold;
     font-size: 16px;
+    transition: transform 0.3s; /* Adiciona uma transição suave de tamanho */
 }
+
+/* Efeito de escala ao passar o mouse */
+.menu ul li a:hover {
+    color: #eebd48; /* Bege */
+    transform: scale(1.1);
+}
+
+
 
 
 /* Estilo das seções */
@@ -123,13 +135,13 @@ section {
 }
 
 section h2 {
-    color: #fd7759;
+    color: #a0ca60; /* Verde claro */
 }
 
 /* Estilo do rodapé */
 footer {
-    background-color: #140b2e;
-    color: #f9fbf1;
+    background-color: #4b1c08; /* Marrom */
+    color: #fab6d6; /* Rosa */
     text-align: center;
     padding: 20px;
 }
