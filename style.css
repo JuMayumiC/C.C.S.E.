@@ -138,6 +138,44 @@ section h2 {
     color: #a0ca60; /* Verde claro */
 }
 
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para as células do cabeçalho */
+th {
+    background-color: #140b2e; /* Cor de fundo para o cabeçalho */
+    color: #f9fbf1; /* Cor do texto para o cabeçalho */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para as células do corpo da tabela */
+td {
+    border: 1px solid #140b2e; /* Adiciona bordas para separar as células */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para as linhas ímpares do corpo da tabela */
+tbody tr:nth-child(odd) {
+    background-color: #f9fbf1; /* Cor de fundo para as linhas ímpares */
+}
+
+/* Estilos para as células da segunda coluna (Início) */
+td:nth-child(2) {
+    color: #ffd11a; /* Cor amarela para as células da segunda coluna */
+}
+
+/* Estilos para as células da terceira coluna (Término) */
+td:nth-child(3) {
+    color: #eebd48; /* Cor bege para as células da terceira coluna */
+}
+
+
 /* Estilo do rodapé */
 footer {
     background-color: #4b1c08; /* Marrom */
